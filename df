@@ -1,0 +1,72 @@
+[33mcommit ef91410ec343575d1631e563e7d98cb4554517a5[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: nagarajukusa24 <nagarajukusa24@gmail.com>
+Date:   Sat Oct 31 10:22:40 2020 +0530
+
+    Fan using oops
+
+[1mdiff --git a/Designing a fan using oops.txt b/Designing a fan using oops.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..166a078[m
+[1m--- /dev/null[m
+[1m+++ b/Designing a fan using oops.txt[m	
+[36m@@ -0,0 +1,59 @@[m
+[32m+[m[32mDesign a class named Fan to represent a fan. The class contains:[m
+[32m+[m[32m- Three constants named SLOW, MEDIUM and FAST with values 1,2 and 3 to denote the fan speed.[m
+[32m+[m[32m- An int data field named speed that specifies the speed of the fan (default SLOW).[m
+[32m+[m[32m- A boolean data field named f_on that specifies whether the fan is on(default false).[m
+[32m+[m[32m- A double data field named radius that specifies the radius of the fan (default 4).[m
+[32m+[m[32m- A data field named color that specifies the color of the fan (default blue).[m
+[32m+[m[32m- A no-arg constructor that creates a default fan.[m
+[32m+[m[32m- A parameterized constructor initializes the fan objects to given values.[m
+[32m+[m[32m- A method named display() will display description for the fan. If the fan is on, the display() method displays speed, color and radius. If the fan is not on, the method returns fan color and radius along with the message “fan is off”.[m
+[32m+[m[32mWrite a test program that creates two Fan objects. One with default values and the other with medium speed, radius 6, color brown, and turned on status true. Display the descriptions for two created Fan objects.[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32mclass Fan[m
+[32m+[m[32m{[m
+[32m+[m[32m public static final int SLOW=1,MEDIUM=2,FAST=3;[m
+[32m+[m[32m int speed;[m
+[32m+[m[32m boolean f_on;[m
+[32m+[m[32m double radius;[m
+[32m+[m[32m String color;[m
+[32m+[m[41m [m
+[32m+[m[32m Fan()[m
+[32m+[m[32m {[m
+[32m+[m[32m  speed=SLOW;[m
+[32m+[m[32m  f_on=false;[m
+[32m+[m[32m  radius=4;[m
+[32m+[m[32m  color="blue";[m
+[32m+[m[32m }[m
+[32m+[m[41m [m
+[32m+[m[32m Fan(int speed,double radius,String color,boolean f_on)[m
+[32m+[m[32m {[m
+[32m+[m[32m  this.speed=speed;[m
+[32m+[m[32m  this.radius=radius;[m
+[32m+[m[32m  this.color=color;[m
+[32m+[m[32m  this.f_on=f_on;[m
+[32m+[m[32m }[m
+[32m+[m[41m [m
+[32m+[m[32m void display()[m
+[32m+[m[32m {[m
+[32m+[m[32m  if(f_on==true)[m
+[32m+[m[32m  {[m
+[32m+[m[32m   System.out.println("Fan is on \n the speed is ="+speed+"\n the color is ="+color+"\n the radius is ="+radius);[m
+[32m+[m[32m  }[m
+[32m+[m[32m  else[m
+[32m+[m[32m  {[m
+[32m+[m[32m   System.out.println("Fan is off \n the color of fan is ="+color+"\n the radius of fan is ="+radius);[m
+[32m+[m[32m  }[m
+[32m+[m[32m }[m
+[32m+[m[41m [m
+[32m+[m[32mpublic static void main(String [] args)[m
+[32m+[m[32m{[m
+[32m+[m[32m Fan obj = new Fan();[m
+[32m+[m[32m Fan obj1 = new Fan(MEDIUM,6,"brown",true);[m
+[32m+[m[32m obj.display();[m
+[32m+[m[32m obj1.display();[m
+[32m+[m[41m [m
+[32m+[m[32m}[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
